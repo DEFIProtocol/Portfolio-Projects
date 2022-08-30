@@ -43,7 +43,7 @@ function PersonalInfo() {
                 <h4>Hello, my name is</h4>
                 <h2 style={style.name}>Beau Allgood</h2>
             </div>
-            <span style={style.text}>I'm a software engineer with experience in Blockchain, Data Analytics, and Web Development. My passion for programming began when I was near completion of a Bachealors in Economics. It taught that I possessed an ability to come to logical real-world conclusions by analyzing data. This had led me to a belief that this field is where I could provide the most help to society and organization growth.</span>
+            <span style={style.text}>Im a software engineer with experience in Blockchain, Data Analytics, and Web Development. My passion for technology began when I was near completion of a bachelor’s in economics. It taught me that I possessed an ability to come to logical real-world conclusions by analyzing data. This led me to a belief that Data Analytics was a field where I could provide the most good for organizations and people.</span>
             <h4 style={{color: "lime"}}>Programming Languages</h4>
             <ul style={{color: "lime"}}>
                 <li>Javascript / Node</li>

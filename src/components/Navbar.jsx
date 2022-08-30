@@ -37,15 +37,6 @@ function Navbar() {
         <div style={style.header}>
         <div style={style.name}>Beau Allgood</div>
         <div style={style}>
-            <button style={{
-                float: "right",
-                marginLeft: "5%",
-                marginTop: "10px",
-                marginRight: "5px",
-                backgroundColor: "lime",
-                borderRadius: ".5em"}}>
-            Resume</button>
-
             <a style={style.page} to="/About">Contact</a>
             <a style={style.page} to="/About">Work</a>
             <a style={style.page} to="/About">Projects</a>
