@@ -1,9 +1,7 @@
 import React from 'react';
-import DAO from './Photos/DAOX.png'
-import gridlock from './Photos/gridlock.png'
-import houseSales from './Photos/Figure_1.png';
 import { GithubOutlined, ProjectOutlined } from "@ant-design/icons";
 import { Card } from 'antd';
+import { Image } from "cloudinary-react";
 
 const style = {
     heading: {
@@ -45,12 +43,21 @@ function Projects() {
         <div>
             <h3 style={style.heading}>Data Analysis</h3>
             <Card style={style.card}>
-                <img style={style.image} src={houseSales}></img>
+                <Image
+                publicId={"bnkbgytmv7r4dvgwm86s"}
+                cloudName="gridlock"
+                style={style.image}
+                />
                     <span style={{float: "right", width: "60%", marginTop: "10%"}}>
                         Using psycopg2 retrieved data from SQL server, and ordered the data by dates. The x-axis is the number of homes sold monthly, and the y-axis corresponds with the month starting in Feb 2007 to 2018.<br /> <br />Server: PostgreSQL <br />Data: Kaggle(House Property Sales Time Series) <br /> Libraries: MatPlotLib, Psycopg2
                     </span>
-                    <GithubOutlined style={{position: "absolute", color: "white", fontSize: "150%", width: "25%", float: "right", marginLeft: "25%", marginTop: "5%" }}/>
-                    <ProjectOutlined style={{position: "absolute", color: "white", fontSize: "150%", width: "25%", float: "right", marginLeft: "37%", marginTop: "5%" }}/>
+                    <a src="https://github.com/DEFIProtocol/House-Property-Sales" style={{position: "absolute", color: "white", fontSize: "150%", width: "25%", float: "right", marginLeft: "33%", marginTop: "5%" }}>
+                        <GithubOutlined style={{position: "absolute", color: "white", fontSize: "150%", width: "25%", float: "right" }}>
+                        </GithubOutlined>
+                    </a>
+                    <a src="./Projects/gridlock/src/App.jsx" style={{position: "absolute", color: "white", fontSize: "150%", width: "25%", float: "right", marginLeft: "50%", marginTop: "5%" }}>
+                        <ProjectOutlined style={{position: "absolute", color: "white", fontSize: "150%", width: "25%", float: "right"}}/>
+                    </a>
             </Card>
         </div>
             <div>
@@ -58,7 +65,11 @@ function Projects() {
                 <Card style={style.card}>
                     <span style={style.warning}>** In order to view entire project must have a compatible browser wallet. **</span>
                     <span style={style.warning}>** You can see full video walk-through <a href="https://youtu.be/MlUy0TSYOQg">Here</a> **</span>
-                    <img style={style.image} src={gridlock}></img>
+                    <Image
+                publicId={"ptphqpxirxjdwdx0apgc"}
+                cloudName="gridlock"
+                style={style.image}
+                />
                         <span style={{float: "right", width: "60%", marginTop: "10%"}}>
                             An application with the capabilities of displaying all information for different fungible tokens. Data is pulled directly from the blockchain, and various API's.<br /> <br />Server: Moralis <br />API: Moralis, Infura(RPCNODE) <br /> Packages: React, Moralis, Ant-Design, ChartJs
                         </span>
@@ -66,13 +77,17 @@ function Projects() {
                             <GithubOutlined style={{position: "absolute", color: "white", fontSize: "150%", width: "25%", float: "right" }}>
                             </GithubOutlined>
                         </a>
-                        <a src="./Projects/gridlock/src/App.jsx" style={{position: "absolute", color: "white", fontSize: "150%", width: "25%", float: "right", marginLeft: "50%", marginTop: "5%" }}>
+                        <a src="" style={{position: "absolute", color: "white", fontSize: "150%", width: "25%", float: "right", marginLeft: "50%", marginTop: "5%" }}>
                             <ProjectOutlined style={{position: "absolute", color: "white", fontSize: "150%", width: "25%", float: "right"}}/>
                         </a>
                 </Card>
             <div>
                 <Card style={style.card}>
-                    <img style={style.image} src={DAO}></img>
+                <Image
+                publicId={"pqv9k3nohotekgv0gnyb"}
+                cloudName="gridlock"
+                style={style.image}
+                />
                         <span style={{float: "right", width: "60%", marginTop: "10%"}}>
                             An application capable of viewing top 10 crypto news, and all prices for 100 different cryptocurrencies.<br /> <br />Server: MongoDB <br />API: Rapid API <br /> Packages: React, Ant-Design, ChartJs
                         </span>
@@ -80,7 +95,7 @@ function Projects() {
                             <GithubOutlined style={{position: "absolute", color: "white", fontSize: "150%", width: "25%", float: "right" }}>
                             </GithubOutlined>
                         </a>
-                        <a href="./Projects/mother-teresa/client/src/App.js" style={{position: "absolute", color: "white", fontSize: "150%", width: "25%", float: "right", marginLeft: "50%", marginTop: "5%" }}>
+                        <a href="" style={{position: "absolute", color: "white", fontSize: "150%", width: "25%", float: "right", marginLeft: "50%", marginTop: "5%" }}>
                         <ProjectOutlined style={{position: "absolute", color: "white", fontSize: "150%", width: "25%", float: "right"}}/>
                         </a>
                 </Card>

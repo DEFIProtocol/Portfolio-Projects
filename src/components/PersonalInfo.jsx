@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from 'antd';
-import MyImage from './Photos/20220829_164408.jpg'
+import { Image } from "cloudinary-react";
 
 const style = {
     heading: {
@@ -33,11 +33,14 @@ const style = {
 }
 
 function PersonalInfo() {
-    console.log(MyImage)
 
   return (
     <div style={style.page}>
-        <img style={style.image} src={MyImage}></img>
+        <Image
+                publicId={"jv7omjjwryfbk6v3x51q"}
+                cloudName="gridlock"
+                style={style.image}
+                />
         <Card style={style.card}>
             <div style={style.heading}>
                 <h4>Hello, my name is</h4>
