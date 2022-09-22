@@ -1,47 +1,55 @@
+import { Menu, Button, Typography } from 'antd';
 import React, { useState, useEffect } from 'react';
-import {MenuFoldOutlined, MenuOutlined} from '@ant-design/icons';
-import {Menu, Button} from 'antd';
-
-
-var style = {
-    header: { 
-        positon: "fixed",
-        top: "0px",
-        width: "100%",
-        height: "40px",
-        color: "lime",
-        textAlign: "center",
-        backgroundColor: "#202020",
-    },
-    name: {
-        float: "left",
-        color: "lime",
-        margin: "5px auto",
-        marginLeft: "5px",
-        fontSize: "1.25em",
-    },
-    pages: {
-        width: "100%",
-    },
-    page: {
-        float: "right",
-        marginLeft: "5%",
-        marginTop: "10px",
-        marginRight: "5px",
-    }
-}
+import { Link } from 'react-router-dom';
+import { MenuOutlined } from "@ant-design/icons";
+import '../App.css';
 
 function Navbar() {
+    const [ activeMenu, setActiveMenu ] = useState(true);
+    const [screenSize, setScreenSize ] = useState(null);
+
+    useEffect(() => {
+        const handleResize = () => setScreenSize(window.innerWidth);
+
+        window.addEventListener('resize', handleResize);
+        handleResize();
+    },[])
+
+    useEffect (() => {
+        if(screenSize < 760) {
+            setActiveMenu(false);
+        } else {
+            setActiveMenu(true);
+        }
+    }, [screenSize])
 
   return (
-        <div style={style.header}>
-        <div style={style.name}>Beau Allgood</div>
-        <div style={style}>
-            <a style={style.page} to="/About">Contact</a>
-            <a style={style.page} to="/About">Work</a>
-            <a style={style.page} to="/About">Projects</a>
-            <a style={style.page} to="/About">About</a>
+    <div className = "nav-container">
+        <div className = "logo-container">
+            <Typography.Title level={2} className ="logo">
+                Beau Allgood
+            </Typography.Title>
+            <Button className ="menu-control-container" onClick={() => setActiveMenu(!activeMenu)}>
+                <MenuOutlined />
+            </Button>
         </div>
+    {activeMenu && (
+    <Menu theme = "dark">
+        <Menu.Item key="about">
+            <Link to ="/About">About</Link>
+        </Menu.Item>
+        <Menu.Item key="projects">
+            <Link to ="/Projects">Projects</Link>
+        </Menu.Item>
+        <Menu.Item key="work">
+            <Link to ="/Work">Work</Link>
+        </Menu.Item>
+        <Menu.Item key="contact">
+            <Link to ="/Contact">Contactt</Link>
+        </Menu.Item>
+    </Menu>
+    )}
+        
         </div>
   )
 }

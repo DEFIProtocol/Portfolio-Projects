@@ -37,29 +37,12 @@ const style = {
 
 
 function Projects() {
+    
+
   return (
     <div>
         <h2 style={{color: "white", textAlign: "center"}}>Projects</h2>
-        <div>
-            <h3 style={style.heading}>Data Analysis</h3>
-            <Card style={style.card}>
-                <Image
-                publicId={"bnkbgytmv7r4dvgwm86s"}
-                cloudName="gridlock"
-                style={style.image}
-                />
-                    <span style={{float: "right", width: "60%", marginTop: "10%"}}>
-                        Using psycopg2 retrieved data from SQL server, and ordered the data by dates. The x-axis is the number of homes sold monthly, and the y-axis corresponds with the month starting in Feb 2007 to 2018.<br /> <br />Server: PostgreSQL <br />Data: Kaggle(House Property Sales Time Series) <br /> Libraries: MatPlotLib, Psycopg2
-                    </span>
-                    <a src="https://github.com/DEFIProtocol/House-Property-Sales" style={{position: "absolute", color: "white", fontSize: "150%", width: "25%", float: "right", marginLeft: "33%", marginTop: "5%" }}>
-                        <GithubOutlined style={{position: "absolute", color: "white", fontSize: "150%", width: "25%", float: "right" }}>
-                        </GithubOutlined>
-                    </a>
-                    <a src="./Projects/gridlock/src/App.jsx" style={{position: "absolute", color: "white", fontSize: "150%", width: "25%", float: "right", marginLeft: "50%", marginTop: "5%" }}>
-                        <ProjectOutlined style={{position: "absolute", color: "white", fontSize: "150%", width: "25%", float: "right"}}/>
-                    </a>
-            </Card>
-        </div>
+    
             <div>
                 <h3 style={style.heading}>Blockchain and Development</h3>
                 <Card style={style.card}>
@@ -73,12 +56,12 @@ function Projects() {
                         <span style={{float: "right", width: "60%", marginTop: "10%"}}>
                             An application with the capabilities of displaying all information for different fungible tokens. Data is pulled directly from the blockchain, and various API's.<br /> <br />Server: Moralis <br />API: Moralis, Infura(RPCNODE) <br /> Packages: React, Moralis, Ant-Design, ChartJs
                         </span>
-                        <a src="https://github.com/DEFIProtocol/lock" style={{position: "absolute", color: "white", fontSize: "150%", width: "25%", float: "right", marginLeft: "33%", marginTop: "5%" }}>
-                            <GithubOutlined style={{position: "absolute", color: "white", fontSize: "150%", width: "25%", float: "right" }}>
+                        <a src="https://github.com/DEFIProtocol/lock" style={{position: "relative", color: "white", fontSize: "150%", width: "25%", float: "right", marginLeft: "33%", marginTop: "5%" }}>
+                            <GithubOutlined style={{position: "relative", color: "white", fontSize: "150%", width: "25%", float: "right" }}>
                             </GithubOutlined>
                         </a>
-                        <a src="" style={{position: "absolute", color: "white", fontSize: "150%", width: "25%", float: "right", marginLeft: "50%", marginTop: "5%" }}>
-                            <ProjectOutlined style={{position: "absolute", color: "white", fontSize: "150%", width: "25%", float: "right"}}/>
+                        <a src="" style={{position: "relative", color: "white", fontSize: "150%", width: "25%", float: "right", marginLeft: "50%", marginTop: "5%" }}>
+                            <ProjectOutlined style={{position: "relative", color: "white", fontSize: "150%", width: "25%", float: "right"}}/>
                         </a>
                 </Card>
             <div>
@@ -91,15 +74,35 @@ function Projects() {
                         <span style={{float: "right", width: "60%", marginTop: "10%"}}>
                             An application capable of viewing top 10 crypto news, and all prices for 100 different cryptocurrencies.<br /> <br />Server: MongoDB <br />API: Rapid API <br /> Packages: React, Ant-Design, ChartJs
                         </span>
-                        <a href="https://github.com/DEFIProtocol/StarterCryptoProject2" style={{position: "absolute", color: "white", fontSize: "150%", width: "25%", float: "right", marginLeft: "33%", marginTop: "5%" }}>
-                            <GithubOutlined style={{position: "absolute", color: "white", fontSize: "150%", width: "25%", float: "right" }}>
+                        <a href="https://github.com/DEFIProtocol/StarterCryptoProject2" style={{position: "relative", color: "white", fontSize: "150%", width: "25%", float: "right", marginLeft: "33%", marginTop: "5%" }}>
+                            <GithubOutlined style={{position: "relative", color: "white", fontSize: "150%", width: "25%", float: "right" }}>
                             </GithubOutlined>
                         </a>
-                        <a href="" style={{position: "absolute", color: "white", fontSize: "150%", width: "25%", float: "right", marginLeft: "50%", marginTop: "5%" }}>
-                        <ProjectOutlined style={{position: "absolute", color: "white", fontSize: "150%", width: "25%", float: "right"}}/>
+                        <a href="./Projects/mother-teresa/client/src/App.js" style={{position: "relative", color: "white", fontSize: "150%", width: "25%", float: "right", marginLeft: "50%", marginTop: "5%" }}>
+                        <ProjectOutlined style={{position: "relative", color: "white", fontSize: "150%", width: "25%", float: "right"}}/>
                         </a>
                 </Card>
             </div>
+            <div>
+            <h3 style={style.heading}>Data Analysis</h3>
+            <Card style={style.card}>
+                <Image
+                publicId={"bnkbgytmv7r4dvgwm86s"}
+                cloudName="gridlock"
+                style={style.image}
+                />
+                    <span style={{float: "right", width: "60%", marginTop: "10%"}}>
+                        Using psycopg2 retrieved data from SQL server, and ordered the data by dates. The x-axis is the number of homes sold monthly, and the y-axis corresponds with the month starting in Feb 2007 to 2018.<br /> <br />Server: PostgreSQL <br />Data: Kaggle(House Property Sales Time Series) <br /> Libraries: MatPlotLib, Psycopg2
+                    </span>
+                    <a src="https://github.com/DEFIProtocol/House-Property-Sales" style={{position: "relative", color: "white", fontSize: "150%", width: "25%", float: "right", marginLeft: "33%", marginTop: "5%" }}>
+                        <GithubOutlined style={{position: "relative", color: "white", fontSize: "150%", width: "25%", float: "right" }}>
+                        </GithubOutlined>
+                    </a>
+                    <a src="./Projects/gridlock/src/App.jsx" style={{position: "relative", color: "white", fontSize: "150%", width: "25%", float: "right", marginLeft: "50%", marginTop: "5%" }}>
+                        <ProjectOutlined style={{position: "relative", color: "white", fontSize: "150%", width: "25%", float: "right"}}/>
+                    </a>
+            </Card>
+        </div>
         </div>
     </div>
   )

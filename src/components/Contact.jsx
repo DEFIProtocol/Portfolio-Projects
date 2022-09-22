@@ -7,10 +7,11 @@ const style = {
         padding: "20px",
         backgroundColor: "#202020",
         marginBottom: "50px"
-    }
+    },
 }
 
 function Contact() {
+
   return (
     <>
     <h2 style={{color: "white", textAlign: "center"}}>Contact</h2>

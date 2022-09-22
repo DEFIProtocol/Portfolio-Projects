@@ -1,3 +1,123 @@
 * {
   background-color: none;
 }
+html, body {
+  height: 100%;
+  width: 100%
+}
+
+.app{
+  display: flex;
+  overflow: hidden;
+  background-color: #404040;
+  color: lime;
+  height: 100%;
+  width: 100%;
+}
+
+.navbar{
+  flex: 0.2;
+  background-color: black;
+}
+
+.footer {
+  background-color: black;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  height: 20vh;
+  width: 100vw;
+}
+
+.routes {
+  padding: 20px;
+  color: lime;
+}
+
+.nav-container{
+  position: fixed;
+  left: 0;
+  margin: 10px;
+  height: 100vh;
+  margin: 0px;
+  background-color: black;
+}
+
+.logo-container{
+  background-color: black;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  width: 100%;
+}
+
+.menu-control-container{
+  display: none !important;
+  position: absolute !important;
+  right: 10px !important;
+  top: 25px !important;
+  font-size: 1.2rem !important;
+  background-color: black;
+  color: lime;
+  border: none !important;
+}
+.main{
+  flex: 0.8;
+  width: 100%;
+}
+
+@media screen and (max-width:1300px){
+  .main{
+      margin-left: 50px;
+  }
+}
+
+@media screen and (max-width:1170px){
+  .main{
+      margin-left: 50px;
+  }
+}
+
+@media screen and (max-width:1000px){
+  .main{
+      margin-left: 100px;
+  }
+}
+
+@media screen and (max-width:800px){
+  .app{
+      flex-direction: column;
+      overflow: hidden;
+  } 
+  .navbar {
+    flex: 1;
+  } 
+
+  .nav-container{
+    height: 8vh;
+    position:fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: black;
+  }
+
+  .menu-control-container{
+      display: block !important;
+  }
+
+  .main{
+    flex: 1;
+    margin-top: 90px;
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+
+  .footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    height: 20vh;
+  }
+}

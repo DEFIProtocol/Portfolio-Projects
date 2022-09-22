@@ -6,24 +6,31 @@ import {
   Work,
   Contact,
  } from "./components";
- import { Route, Routes } from 'react-router-dom'
+ import { Route, Routes } from 'react-router-dom';
+ import { Image } from "cloudinary-react";
+ import { Layout} from "antd";
 
-const style = {
-  app: {
-    backgroundColor: "#404040",
-    color: "lime"
-  }
-}
 function App() {
 
   return (
-    <div style={style.app}>
-      <Navbar />
-      <PersonalInfo />
-      <Projects />
-      <Work />
-      <Contact />
-    </div>
+      <div className="app">
+        <div className="navbar">
+          <Navbar />
+        </div>
+        <div className= "main">
+          <Layout>
+            <div className="routes">
+            <Routes> 
+              <Route path = "/About" element={<PersonalInfo />} />
+              <Route path="/Projects" element={<Projects />} />
+              <Route path="/Work" element={<Work />} />
+              <Route path="/Contact" element={<Contact />} />
+            </Routes>
+            </div>
+          </Layout>
+        </div>
+        
+      </div>
   );
 }
 
