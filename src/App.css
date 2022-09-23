@@ -6,6 +6,11 @@ html, body {
   width: 100%
 }
 
+.link {
+  text-decoration: none;
+  color: lime;
+}
+
 .app{
   display: flex;
   overflow: hidden;

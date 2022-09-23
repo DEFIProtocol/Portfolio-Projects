@@ -6,7 +6,8 @@ const style = {
         margin: "15px",
         padding: "20px",
         backgroundColor: "#202020",
-        marginBottom: "50px"
+        marginBottom: "50px",
+        height: "65vh"
     },
 }
 

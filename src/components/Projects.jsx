@@ -42,9 +42,27 @@ function Projects() {
   return (
     <div>
         <h2 style={{color: "white", textAlign: "center"}}>Projects</h2>
-    
+        <h3 style={style.heading}>Blockchain and Development</h3>
+        <div>
+                <Card style={style.card}>
+                <Image
+                publicId={"pqv9k3nohotekgv0gnyb"}
+                cloudName="gridlock"
+                style={style.image}
+                />
+                        <span style={{float: "right", width: "60%", marginTop: "10%"}}>
+                            An application capable of viewing top 10 crypto news, and all prices for 100 different cryptocurrencies.<br /> <br />Server: MongoDB <br />API: Rapid API <br /> Packages: React, Ant-Design, ChartJs
+                        </span>
+                        <a href="https://github.com/DEFIProtocol/StarterCryptoProject2" style={{position: "relative", color: "white", fontSize: "150%", width: "25%", float: "right", marginLeft: "33%", marginTop: "5%" }}>
+                            <GithubOutlined style={{position: "relative", color: "white", fontSize: "150%", width: "25%", float: "right" }}>
+                            </GithubOutlined>
+                        </a>
+                        <a href="./Projects/mother-teresa/client/src/App.js" style={{position: "relative", color: "white", fontSize: "150%", width: "25%", float: "right", marginLeft: "50%", marginTop: "5%" }}>
+                        <ProjectOutlined style={{position: "relative", color: "white", fontSize: "150%", width: "25%", float: "right"}}/>
+                        </a>
+                </Card>
+            </div>
             <div>
-                <h3 style={style.heading}>Blockchain and Development</h3>
                 <Card style={style.card}>
                     <span style={style.warning}>** In order to view entire project must have a compatible browser wallet. **</span>
                     <span style={style.warning}>** You can see full video walk-through <a href="https://youtu.be/MlUy0TSYOQg">Here</a> **</span>
@@ -64,25 +82,6 @@ function Projects() {
                             <ProjectOutlined style={{position: "relative", color: "white", fontSize: "150%", width: "25%", float: "right"}}/>
                         </a>
                 </Card>
-            <div>
-                <Card style={style.card}>
-                <Image
-                publicId={"pqv9k3nohotekgv0gnyb"}
-                cloudName="gridlock"
-                style={style.image}
-                />
-                        <span style={{float: "right", width: "60%", marginTop: "10%"}}>
-                            An application capable of viewing top 10 crypto news, and all prices for 100 different cryptocurrencies.<br /> <br />Server: MongoDB <br />API: Rapid API <br /> Packages: React, Ant-Design, ChartJs
-                        </span>
-                        <a href="https://github.com/DEFIProtocol/StarterCryptoProject2" style={{position: "relative", color: "white", fontSize: "150%", width: "25%", float: "right", marginLeft: "33%", marginTop: "5%" }}>
-                            <GithubOutlined style={{position: "relative", color: "white", fontSize: "150%", width: "25%", float: "right" }}>
-                            </GithubOutlined>
-                        </a>
-                        <a href="./Projects/mother-teresa/client/src/App.js" style={{position: "relative", color: "white", fontSize: "150%", width: "25%", float: "right", marginLeft: "50%", marginTop: "5%" }}>
-                        <ProjectOutlined style={{position: "relative", color: "white", fontSize: "150%", width: "25%", float: "right"}}/>
-                        </a>
-                </Card>
-            </div>
             <div>
             <h3 style={style.heading}>Data Analysis</h3>
             <Card style={style.card}>

@@ -36,21 +36,20 @@ function Navbar() {
     {activeMenu && (
     <Menu theme = "dark">
         <Menu.Item key="about">
-            <Link to ="/About">About</Link>
+            <Link to ="/About" className="link">About</Link>
         </Menu.Item>
         <Menu.Item key="projects">
-            <Link to ="/Projects">Projects</Link>
+            <Link to ="/Projects" className="link">Projects</Link>
         </Menu.Item>
         <Menu.Item key="work">
-            <Link to ="/Work">Work</Link>
+            <Link to ="/Work" className="link">Work</Link>
         </Menu.Item>
         <Menu.Item key="contact">
-            <Link to ="/Contact">Contactt</Link>
+            <Link to ="/Contact" className="link">Contact</Link>
         </Menu.Item>
     </Menu>
-    )}
-        
-        </div>
+    )} 
+    </div>
   )
 }
 
