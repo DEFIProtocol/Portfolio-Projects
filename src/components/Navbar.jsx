@@ -36,7 +36,7 @@ function Navbar() {
     {activeMenu && (
     <Menu theme = "dark">
         <Menu.Item key="about">
-            <Link to ="/About" className="link">About</Link>
+            <Link to ="/" className="link">About</Link>
         </Menu.Item>
         <Menu.Item key="projects">
             <Link to ="/Projects" className="link">Projects</Link>
