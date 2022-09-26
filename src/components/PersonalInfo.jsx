@@ -46,7 +46,7 @@ function PersonalInfo() {
                 <h4>Hello, my name is</h4>
                 <h2 style={style.name}>Beau Allgood</h2>
             </div>
-            <span style={style.text}>Im a software engineer with experience in Blockchain, Data Analytics, and Web Development. My passion for technology began when I was near completion of a bachelor’s in economics. It taught me that I possessed an ability to come to logical real-world conclusions by analyzing data. This led me to a belief that Data Analytics was a field where I could provide the most good for organizations and people.</span>
+            <span style={style.text}>I am a full-stack software engineer with experience in web development, sql and no sql servers, blockchain, and data analytics. My passion for technology began when I was near completion of my bachelor's in economics degree. After coming to the conclusion that software development was a continuously adapting field, I knew this was an opportunity for me to learn and grow. This has led me to at just shy of 2 years of development experience and a desire to innovate.</span>
             <h4 style={{color: "lime"}}>Programming Languages</h4>
             <ul style={{color: "lime"}}>
                 <li>Javascript / Node</li>

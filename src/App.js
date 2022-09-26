@@ -7,7 +7,6 @@ import {
   Contact,
  } from "./components";
  import { Route, Routes } from 'react-router-dom';
- import { Image } from "cloudinary-react";
  import { Layout} from "antd";
 
 function App() {

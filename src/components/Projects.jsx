@@ -15,20 +15,15 @@ const style = {
         margin: "15px",
         display: "flex",
         alignItems: "center",
-    },
-    projectDescription: {
+        float: "left",
+        marginTop: "3%"
     },
     warning: {
         color: "red",
         margin: "0px auto",
-        padding: "5px",
         fontWeight: "bold",
         display: "flex",
         alignItems: "center",
-    },
-    linksAndDesc: {
-        float: "right",
-        position: "absolute",
     },
     card: {
         backgroundColor: "#202020",
@@ -36,7 +31,7 @@ const style = {
         margin: "15px", 
         padding: "20px",
         display: "flex",
-        alignItems: "center",
+        flexWrapper: "nowrap",
         
     }
 }
@@ -49,7 +44,7 @@ function Projects() {
   return (
     <div>
         <h2 style={{color: "white", textAlign: "center"}}>Projects</h2>
-        <h3 style={style.heading}>Blockchain and Development</h3>
+        <h3 style={style.heading}>Node and Blockchain Development</h3>
         <div>
                 <Card style={style.card}>
                 <Image
@@ -61,34 +56,37 @@ function Projects() {
                             <GithubOutlined style={{position: "absolute", color: "white", fontSize: "150%"}}>
                             </GithubOutlined>
                         </a>
-                        <a href="./Projects/mother-teresa/client/src/App.js" style={{position: "absolute", color: "white", fontSize: "150%" , marginLeft: "30%"}}>
+                        <a href="https://crypto-starter-project.netlify.app/" style={{position: "absolute", color: "white", fontSize: "150%" , marginLeft: "30%"}}>
                         <ProjectOutlined style={{position: "absolute", color: "white", fontSize: "150%"}}/>
                         </a>
                         <span style={{float: "right", width: "60%", marginTop: "10%"}}>
-                            An application capable of viewing top 10 crypto news, and all prices for 100 different cryptocurrencies.<br /> <br />Server: MongoDB <br />API: Rapid API <br /> Packages: React, Ant-Design, ChartJs
+                            An application capable of tracking all the crypto prices from RapidApi. Additionally, used bing news to track top 10 trending crypto articles. On the Homepage it tells you information about the crypto market, top 10 cryptocurrencies, and the top 6 news articles. Each section has a further link to display more cryptos or news. Each coin or token has its own page with information pulled directly off of rapidAPI. I did add a basic user login as well using JWT and axios, but due to the nature of MongoDB don't have it set up on display site.<br /> <br />Server: MongoDB <br />API: Rapid API <br /> Packages: React, Ant-Design, ChartJs
                         </span>
                 </Card>
             </div>
             <div>
                 <Card style={style.card}>
-                    <span style={style.warning}>** In order to view entire project must have a compatible browser wallet. ** <br />
-                    ** You can see full video walk-through
-                    <a href="https://youtu.be/MlUy0TSYOQg" style={{color: "lime", textDecoration: "none", display: "inline-block"}}>Here</a> **</span>
+                    <span style={style.warning}>
+                    ** In order to view entire project must have a compatible browser wallet. ** <br />
+                    </span>
+                    <span style={style.warning}>
+                    ** You can see full video walk-through <a href="https://youtu.be/MlUy0TSYOQg" style={{color: "lime", textDecoration: "none", marginLeft: "4px"}}> Here</a> **
+                    </span>
                     <Image
                 publicId={"ptphqpxirxjdwdx0apgc"}
                 cloudName="gridlock"
                 style={style.image}
                 />
-                        <a src="https://github.com/DEFIProtocol/lock" style={{position: "absolute", color: "white", fontSize: "150%" , marginLeft: "15%"}}>
-                            <GithubOutlined style={{position: "relative", color: "white", fontSize: "150%"}}>
-                            </GithubOutlined>
-                        </a>
-                        <a src="" style={{position: "absolute", color: "white", fontSize: "150%" , marginLeft: "30%"}}>
-                            <ProjectOutlined style={{position: "relative", color: "white", fontSize: "150%"}}/>
-                        </a>
-                        <span style={{float: "right", width: "60%", marginTop: "10%"}}>
-                            An application with the capabilities of displaying all information for different fungible tokens. Data is pulled directly from the blockchain, and various API's.<br /> <br />Server: Moralis <br />API: Moralis, Infura(RPCNODE) <br /> Packages: React, Moralis, Ant-Design, ChartJs
-                        </span>
+                    <a href="https://github.com/DEFIProtocol/Deployed-Lock" style={{position: "absolute", color: "white", fontSize: "150%" , marginLeft: "15%"}}>
+                        <GithubOutlined style={{position: "relative", color: "white", fontSize: "150%"}}>
+                        </GithubOutlined>
+                    </a>
+                    <a href="https://beta-gridlock.netlify.app/" style={{position: "absolute", color: "white", fontSize: "150%" , marginLeft: "30%"}}>
+                        <ProjectOutlined style={{position: "relative", color: "white", fontSize: "150%"}}/>
+                    </a>
+                    <span style={{float: "right", width: "60%", marginTop: "10%"}}>
+                        This site originally began as a form of minimum viable product. It was built of the ethereum-boilerplate template and has had almost 5 months of updates. These include a favorites list for different tokens that are dynamically added or removed from the user object in the database. A token webpage with price chart(not currently available due to to many api request to server), a description, website, token type, and announcements(all can be altered by the user wallet that matches the creator of token). To see full site capabilities please view my youtube walk-through listed above.<br /> <br />Server: Moralis <br />API: Moralis, Infura(RPCNODE), 1Inch <br /> Packages: React, Moralis, Ant-Design, ChartJs
+                    </span>
                 </Card>
             <div>
             <h3 style={style.heading}>Data Analysis</h3>
@@ -98,11 +96,11 @@ function Projects() {
                 cloudName="gridlock"
                 style={style.image}
                 />
-                    <a src="https://github.com/DEFIProtocol/House-Property-Sales" style={{position: "absolute", color: "white", fontSize: "150%" , marginLeft: "15%"}}>
+                    <a href="https://github.com/DEFIProtocol/House-Property-Sales" style={{position: "absolute", color: "white", fontSize: "150%" , marginLeft: "15%"}}>
                         <GithubOutlined style={{position: "relative", color: "white", fontSize: "150%"}}>
                         </GithubOutlined>
                     </a>
-                    <a src="./Projects/gridlock/src/App.jsx" style={{position: "absolute", color: "white", fontSize: "150%" , marginLeft: "30%" }}>
+                    <a href="https://github.com/DEFIProtocol/House-Property-Sales" style={{position: "absolute", color: "white", fontSize: "150%" , marginLeft: "30%" }}>
                         <ProjectOutlined style={{position: "relative", color: "white", fontSize: "150%" }}/>
                     </a>
                     <span style={{float: "right", width: "60%", marginTop: "10%"}}>
